@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Computer Graphics Project</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="#">Game Logic</a></li>
+        <li><a href="#">Transanctional Coding</a></li>
+        <li><a href="#">UI and User Environment</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="#">Asset Creation</a></li>
+        <li><a href="#">Game Logic</a></li>
+        <li><a href="#">Transanctional Coding</a></li>
+        <li><a href="#">UI and User Environment</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container" >
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center black-text text-lighten-2">Asset Creation</h1>
+        <h5 class="center black-text light">by</h5>
+        <h5 class="center black-text light">Neelesh Ranjan Jha, Rishi Saxena</h5>
+      </div>
+    </div>
+    <div class="parallax" style="background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section" >
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <h1 class="header center black-text text-lighten-2">Asset Creation in Blender</h1>
+        
+          <div class="icon-block">
+            <h2 class="center blue-text"><i class="material-icons">build</i></h2>
+            <h4 class="center">Creating the pieces</h4>
+            <p class="light center"><span class="flow-text">The assets were created using Blender 3D Modeling tool.</p>
+              <br>
+            <p class="light center"><span class="flow-text">We started with creating the Chess pieces like Pawn, Rook, Queen
+                , King and Bishop.
+            </p>
+            
+            <img class="responsive-img" width="1280" src="./imgs/modeling.png" alt="rook">
+            <p class="light center"><span class="flow-text">Here we were creating the Pawn model using blender. Using the Extruding tool,
+              we took an image of Rook from Google as the reference and using a Circle scaled the model.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/rook.jpg" alt="rook">
+            <p class="light center"><span class="flow-text">In the screenshot above, we have modelled the Rook model using the same methodology
+              as above. The following are the screenshots of all the models created using Blender.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/pawn.png" alt="models">
+            <img class="responsive-img" width="1280" src="./imgs/bishop.png" alt="models">
+            <img class="responsive-img" width="1280" src="./imgs/queen.png" alt="models">
+            <img class="responsive-img" width="1280" src="./imgs/king.png" alt="models">
+            <img class="responsive-img" width="1280" src="./imgs/knight.png" alt="models">
+            <p class="light center"><span class="flow-text">After this we added shading to all models to simulate fake lighting
+              by adding a Material property and adding mettalic feel to it.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/king-shading.jpg" alt="models">
+            <p class="light center"><span class="flow-text">Finally we create a Chessboard, by adding a plane and creating a 
+              Chessboard texture and linking it. Then we place all the pieces one by on on the Chessboard.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/u2.jpg" alt="models">
+            <h4 class="center">White Pieces</h4>
+            <img class="responsive-img" width="1280" src="./imgs/u1.jpg" alt="models">
+            <h4 class="center">Black Pieces</h4>
+            <img class="responsive-img" width="1280" src="./imgs/black.jpg" alt="models">
+            <h4 class="center">Top View</h4>
+            <img class="responsive-img" width="1280" src="./imgs/upper.jpg" alt="models">
+            <p class="light center"><span class="flow-text">Now the Chess game is ready for further building.</p>
+          </div>
+
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer teal" style="background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);">
+    
+    <div class="footer-copyright" style="background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);">
+      <div class="container black-text">
+      Made by <a class="white-text text-lighten-3" href="https://github.com/Neeleshrj">Neelesh Ranjan Jha</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/asset.js"></script>
+
+  </body>
+</html>
