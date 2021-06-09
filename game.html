@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Computer Graphics Project</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+
+  <nav class="white" role="navigation">
+    <div class="nav-wrapper container">
+      <ul class="left hide-on-med-and-down">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./asset.html">Assets</a></li>
+        <li><a href="#">Transanctional Coding</a></li>
+        <li><a href="#">UI and User Environment</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="./index.html">Home</a></li>
+        <li><a href="./asset.html">Assets</a></li>
+        <li><a href="#">Transanctional Coding</a></li>
+        <li><a href="#">UI and User Environment</a></li>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <div id="index-banner" class="parallax-container" >
+    <div class="section no-pad-bot">
+      <div class="container">
+        <br><br>
+        <h1 class="header center black-text text-lighten-2">Game Logic and User Environment</h1>
+        <h5 class="center black-text light">by</h5>
+        <h5 class="center black-text light">Nirmal Prabhu, Abhishek Soni</h5>
+      </div>
+    </div>
+    <div class="parallax" style="background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);"></div>
+  </div>
+
+
+  <div class="container">
+    <div class="section" >
+
+      <!--   Icon Section   -->
+      <div class="row">
+        <h1 class="header center black-text text-lighten-2">Game Logic and Environment Coding using C#</h1>
+        
+          <div class="icon-block">
+            <h2 class="center blue-text"><i class="material-icons">build</i></h2>
+            <h4 class="center">Chess Game Controller</h4>
+            <p class="light center"><span class="flow-text">The ChessGameController is a central and important module; it sets the state of the game, of the player and the board. 
+                This module co-ordinates with modules like ChessPlayer, BoardLayout, Board and PieceCreator to constantly control the state of the current game.
+                 It calls the BoardLayout module to set the initial state of the board. 
+            </p>
+            <br>
+            <p class="light center"><span class="flow-text">It sends out a call to the PieceCreator module to create and render the pieces in game as they are in their initial state. 
+                It tracks the status, team and pieces of the chess players by calling the ChessPlayer module. 
+                The ChessGameController can be thought of as a main class which calls and implements various other subclasses.
+            </p>
+            
+            <img class="responsive-img" width="1280" src="./imgs/gl.png" alt="rook">
+            <p class="light center"><span class="flow-text">As seen above it creates objects of the above mentioned modules and implements them. 
+                It uses these modules to create the starting layout and place pieces, count number of pieces, who they belong to.                
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl2.png" alt="rook">
+
+            <h4 class="center">Board Layout</h4>
+            <p class="light center"><span class="flow-text">While the ChessGameController module deals with the overall state and game creation by calling other modules, 
+                the BoardLayout modules actually creates the initial layout and board state. 
+                The BoardLayout module is responsible for the state of the board. 
+                It acts as sort of a sub class and the main function which is the ChessGameController calls an object of the BoardLayout and implements it. 
+            </p>
+            <br>
+            <p class="light center"><span class="flow-text">BoardLayout assigns variables and tracks which team the piece belongs to (black or white), 
+                along with which piece it is (rook, king etc.).
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl3.png" alt="rook">
+            <p class="light center"><span class="flow-text">It allows other modules like the Board and ChessGameController module to get position co-ordinates, piece name (king) and piece colour (white). 
+                It calculates the position co-ordinates, piece name (king) and piece colour (white) and returns this information through member functions.
+                These functions can be invoked or used by other modules when by calling an object of BoardLayout class.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl4.png" alt="rook">
+            <p class="light center"><span class="flow-text">The BoardLayout module can be thought of as a service provider of board information, 
+                for other modules to use.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl5.png" alt="rook">
+            <p class="light center"><span class="flow-text">This Function performs the move after a piece is selected, 
+                if a user is selecting a piece he can perform these 4 things TryToTakeOppositePiece , 
+                UpdateBoardOnPieceMove, MovePiece , deselectPiece , endTurn.
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl6.png" alt="rook">
+            <p class="light center"><span class="flow-text">
+                CalcuateCoordsFromPosition function is calculating the coordinates in the range of 0-7
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl7.png" alt="rook">
+            <p class="light center"><span class="flow-text">
+                OnSquareSelected function is used if a square is already selected and user is again selecting it so in
+                result it should be deselected and if user is trying to move a piece then the selected piece 
+                should be moved to the new coordinates .
+            </p>
+            <img class="responsive-img" width="1280" src="./imgs/gl8.png" alt="rook">
+            <p class="light center"><span class="flow-text">
+                If a user is trying to take a piece this function will remove that piece.
+                The Board Layout contains all the main functionality of the game.
+            </p>
+          </div>
+
+        
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+
+  <footer class="page-footer teal" style="background-color: #FAD961;
+  background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);">
+    
+    <div class="footer-copyright" style="background-color: #FAD961;
+    background-image: linear-gradient(90deg, #FAD961 0%, #F76B1C 100%);">
+      <div class="container black-text">
+      Made by <a class="white-text text-lighten-3" href="https://github.com/Neeleshrj">Neelesh Ranjan Jha</a>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+  <script src="js/asset.js"></script>
+
+  </body>
+</html>
